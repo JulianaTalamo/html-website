@@ -1,0 +1,15 @@
+h1 {color:#6666ff;font-family:'Roboto Slab', serif;}
+h2 {color:#6666ff;font-family:'Roboto Slab', serif;}
+
+p {font-family: 'Roboto Condensed', sans-serif;}
+li {word wrap:break-word;font-family: 'Roboto Condensed', sans-serif;}
+.p1 {color:#6666ff;font-family: 'Roboto Condensed', sans-serif;}
+strong {color:#6666ff}
+
+.div {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-left: 0;
+   margin-right: 0;
+}
