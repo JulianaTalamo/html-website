@@ -9,29 +9,40 @@
 </head>
 
 
-
-
-
-
 <script>
 window.alert("Hello! Welcome my page! Click 'ok' to begin :)");
 </script>
 
 
 <center>
-<h1>Juliana Talamo: All about meeeeeeee</h1>
+<h1 id="demo"=>All about meeeeeeee...</h1>
+<button onclick="document.getElementById('demo').style.fontSize='70px'">Click to see the title larger!</button>
+
+
+<h1 id="name" style="display:none">Juliana Talamo!</h1>
+<button type="button" onclick="document.getElementById('name').style.display='block'">Want to know my name?</button>
+
+
+
+
+
 <p>This is me :D</p>
-	<img src="me.jpg" width="125" height="125" alt="Image of Juliana"></img>
+	<img src="me.jpg" width="100" height="100" alt="Image of Juliana"></img>
 
 
-<p>Hi! My name is Juliana Talamo and I'm 15 years old. <br> 
-I turn 16 years old on June 28, 2017...in two daysssss. <br>
+<p>Hi! My name is Juliana Talamo and I'm 16 years old. <br> 
 I grew up in the keys, and moved to Miami for 7th grade. <br>
 We moved to Miami mostly for a better swim team, and for a better school. <br>
 I am going to sas next year... :/</p>
 </center>
-
 <br>
+
+<button onclick="document.getElementById('mImage').src='ocean.jpg'">Click here to reveal picture #1</button>
+<img id="mImage" src="foam.jpg" style="width:300px">
+<button onclick="document.getElementById('mImage').src='foam.jpg'">Click here to reveal picture #2</button>
+
+
+
 
 <h2>More Fun Facts</h2>
 	<ul>
@@ -49,14 +60,12 @@ I am going to sas next year... :/</p>
 <h2>Likes</h2>
 <ul>
 	<li>Outlander</li>
-	<li>Game of Thrones</li>
 	<li>Desserts...aka all FOOD</li>
 	<li>I <strong>REALLY</strong> like to take pictures of sunsets and sundowns</li>
-	</ul>
-	
+	</ul>	
 		<img src="1.jpg" width="220" height="150" alt="keyshouse"></img>
-	<img src="2.jpg" width="220" height="150" alt="keyshouse"></img>
-	<img src="3.jpg" width="220" height="150" alt="keyshouse"></img>
+		<img src="2.jpg" width="220" height="150" alt="keyshouse"></img>
+		<img src="3.jpg" width="220" height="150" alt="keyshouse"></img>
 	
 
 <h2>Love/Hate Relationship</h2>
@@ -86,14 +95,37 @@ I am going to sas next year... :/</p>
 <p>VSCO!!!!!!</p>                                                                                                                                                        
 	</a>
 
-<h2>Ocean Pictures</h2>
-
-<button onclick="document.getElementById('mImage').src='1.jpg'">Click here to reveal picture #1</button>
-
-<img id="mImage" src="1.jpg.gif" style="width:500px">
 
 
 
+
+
+<script>
+function bgChange(bg) {document.body.style.background = bg;}
+</script>
+</head>
+
+<body>
+
+<h2>Change background color</h2>
+<p>Mouse over the squares!</p>
+
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Khaki">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:PaleGreen">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Silver">
+    </td>
+  </tr>
+</table>
 
 
 
